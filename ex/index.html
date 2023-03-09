@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html ng-app="virtualLab" ng-controller="GlobalCtrl">
+
+<head>
+    <title ng-bind="pageTitle">Hukum Archimedes | Lab Maya</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="imagetoolbar" content="no" />
+
+    <meta content="Archimedes menyatakan bahwa suatu benda yang dicelupkan sebagian atau seluruhnya ke dalam zat cair, mengalami gaya ke atas yang besarnya sama dengan berat zat cair yang dipindahkan oleh benda tersebut. Adanya gaya dalam zat cair menjadikan benda yang dimasukan kedalam zat cair mengalami tiga kemungkinan, yaitu terapung, melayang, dan tenggelam."
+        name=description />
+    <meta content="Rumah Belajar -  Lab Maya" name=author />
+    <meta content="Hukum Archimedes | Lab Maya" property="og:title" />
+    <meta content="Archimedes menyatakan bahwa suatu benda yang dicelupkan sebagian atau seluruhnya ke dalam zat cair, mengalami gaya ke atas yang besarnya sama dengan berat zat cair yang dipindahkan oleh benda tersebut. Adanya gaya dalam zat cair menjadikan benda yang dimasukan kedalam zat cair mengalami tiga kemungkinan, yaitu terapung, melayang, dan tenggelam."
+        property="og:description" />
+    <meta content="Rumah Belajar - Lab Maya" property="og:site_name" />
+    <meta content="assets/img/og-image.jpg" property="og:image" />
+
+    <!-- compiled CSS -->
+    <link rel="stylesheet" type="text/css" href="vendor/ngDialog/css/ngDialog.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/ngDialog/css/ngDialog-theme-plain.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/ngDialog/css/ngDialog-theme-default.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/angular-carousel/dist/angular-carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/virtuallab-archimedeslaw-1.0.0.css" />
+
+    </script>
+</head>
+
+<body ng-class="menuState">
+
+    <header class="header clearfix">
+        <div class="header-logo">
+            <img src="assets/img/logo_rumah_belajar.png" alt="Rumah Belajar - Virtual Lab" title="Rumah Belajar - Virtual Lab" />
+        </div>
+
+        <div class="header-nav">
+            <button ng-show="showModal" class="btn btn-info btn-flat btn-share" type="button" ng-click="shareModalClick()"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Bagikan</button>
+        </div>
+    </header>
+
+    <div class="wrapper-outer" ui-view="main">
+        <!-- Splash Screen -->
+        <div class="overlay">
+            <div class="overlay-inner">
+                <img class="logo" src="assets/img/logo_rumah_belajar.png" alt="Rumah Belajar: Virtual Lab Splash Screen" />
+                <img class="loading" src="assets/img/loading.gif" alt="Loading&hellip;" />
+            </div>
+        </div>
+
+    </div>
+
+    <!-- compiled JavaScript -->
+    <script type="text/javascript" src="assets/virtuallab-archimedeslaw-1.0.0.js"></script>
+</body>
+
+</html>
+
+
+<!-- MODAL SHARE -->
+<script type="text/ng-template" id="modalShare">
+
+    <form>
+        <div class="modal-header text-center">
+            <h4 class="modal-title" ng-bind="shareTitle"></h4>
+        </div>
+        <div class="modal-body" style="background-color:#fff;">
+            <div class="margin-bottom-sm">
+                <h4 class="margin-bottom-xs"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Link</h4>
+                <div class="row">
+                    <div class="col-xs-10">
+                        <input type="text" class="form-control" select-on-click ng-value="url" readonly />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4 class="margin-bottom-xs"><span class="glyphicon glyphicon-share" aria-hidden="true"></span> Media Sosial</h4>
+                <ul class="social-share-icons">
+                    <li class="facebook">
+                        <a ng-href="{{link.facebook}}" title="Bagikan ke Facebook" target="_blank"></a>
+                    </li>
+                    <li class="twitter">
+                        <a ng-href="{{link.twitter}}" title="Bagikan ke Twitter" target="_blank"></a>
+                    </li>
+                    <li class="googleplus">
+                        <a ng-href="{{link.gplus}}" title="Bagikan ke Google+" target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </form>
+</script>
