@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SIMULASI GERAK PARABOLA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+body {
+ 
+  background-color: #e5e5f7;
+}
+
+.btn {
+  border : none; 
+  padding : 10px; 
+   position : fixed; 
+  z-index : -1;
+  left : 50%;
+  transform : translateX(-50%);
+}
+
+body {font-family: "Lato", sans-serif
+}
+.mySlides {display: none}
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(0,0,0,0));
+  font-size: .9rem;
+  padding-top: 0;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color:black;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  padding-top: 10;
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  10% {
+    transform: translateY(-10px)
+  }
+}
+
+.responsive-iframe {
+  position:absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.responsive-iframee {
+  position:absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  position: relative;
+  overflow: auto;
+  width: 100%; 
+  padding-top: 56%;/* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.containerr {
+  position: relative;
+  overflow: auto;
+  width: 100%; 
+  padding-top: 0%;/* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.navigation-bar {
+    width: 100%;  /* i'm assuming full width */
+    height: 70px; /* change it to desired width */
+    background-color:rgb(255, 255, 255); /* change to desired color */
+}
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;    /* if you want it vertically middle of the navbar. */
+}
+.navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0px;
+    margin-left: 0px;
+    height: 80px;        /* if you want it to take the full height of the bar */
+    line-height: 65px;    /* if you want it vertically middle of the navbar */
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<!-- END NAVBAR -->
+
+
+<nav class="navigation-bar">
+    <img class="logo" src="logo.png">
+    <a href="#" style="text-decoration:none" >
+        <div class="waviy">
+            <span style="--i:1">S</span>
+            <span style="--i:2">I</span>
+            <span style="--i:3">M</span>
+            <span style="--i:4">U</span>
+            <span style="--i:5">L</span>
+            <span style="--i:6">A</span>
+            <span style="--i:7">S</span>
+            <span style="--i:8">I</span>
+            <span style="--i:9">_</span>
+            <span style="--i:10">G</span>
+            <span style="--i:11">E</span>
+            <span style="--i:12">R</span>
+            <span style="--i:13">A</span>
+            <span style="--i:14">K</span>
+            <span style="--i:14">_</span>
+            <span style="--i:15">P</span>
+            <span style="--i:16">A</span>
+            <span style="--i:17">R</span>
+            <span style="--i:18">A</span>
+            <span style="--i:19">B</span>
+            <span style="--i:20">O</span>
+            <span style="--i:21">L</span>
+            <span style="--i:22">A</span>
+         
+           </div>
+    </a>
+    
+</nav>
+
+<!-- BAGIAN ATAS (JUDUL) -->
+<div class="w3-content" style="max-width:100%;margin-top:0px;margin-left:5%;margin-right:5%;overflow: auto">
+
+  <!-- JUDUL -->
+ 
+  <!-- SIMULASI -->
+  <div class="container">
+    <iframe class="responsive-iframe" src="https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_en.html"
+    width="800"
+    height="600"
+    allowfullscreen>
+</iframe>
+  </div>
+  </div>
+</div>
+<div >
+  <!--PERTABELAN DKK-->
+  <div class="containerr">
+    <iframe  src="https://docs.google.com/forms/d/e/1FAIpQLSfokqNTz5Hzfy8fUAU--IzpkeVpRC2ZTpeuTDdV_fs0ACdkJQ/viewform?embedded=true"     width=100%
+    height="600"
+    allowfullscreen>Memuat…</iframe>
+  </div>
+</div>
+<!-- End Page Content -->
+
+
+
+
+  <!-- Splash Screen code ends here  -->
+
+
+</body>
+</html>
